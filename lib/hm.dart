@@ -44,7 +44,7 @@ class hmState extends State<hm>{
                 Container(
                   margin: EdgeInsets.symmetric(vertical: 0, horizontal: 10),
                   height: h * 0.2,
-                  width: w * 0.375,
+                  width: w * 0.5,
                   decoration: BoxDecoration(
                       color: Color.fromARGB(255, 7, 7, 7),
                       borderRadius: BorderRadius.circular(90)),
@@ -94,25 +94,7 @@ class hmState extends State<hm>{
                         margin:
                             EdgeInsets.symmetric(vertical: 10, horizontal: 20),
                         height: h * 0.05,
-                        width: w * 0.375,
-                        decoration: BoxDecoration(
-                            color: Color.fromARGB(255, 255, 98, 0),
-                            borderRadius: BorderRadius.circular(15)),
-                        child: Text(
-                          "Karan Aujla",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                              fontStyle: FontStyle.italic,
-                              fontWeight: FontWeight.bold,
-                              fontSize: h * 0.03,
-                              color: Colors.black),
-                        ),
-                      ),
-                      Container(
-                        margin:
-                            EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-                        height: h * 0.05,
-                        width: w * 0.375,
+                        width: w * 0.5,
                         decoration: BoxDecoration(
                             color: Color.fromARGB(255, 255, 98, 0),
                             borderRadius: BorderRadius.circular(15)),
@@ -137,7 +119,33 @@ class hmState extends State<hm>{
                         margin:
                             EdgeInsets.symmetric(vertical: 10, horizontal: 20),
                         height: h * 0.05,
-                        width: w * 0.375,
+                        width: w * 0.5,
+                        padding: EdgeInsets.symmetric(),
+                        decoration: BoxDecoration(
+                            color: Color.fromARGB(255, 255, 98, 0),
+                            borderRadius: BorderRadius.circular(15)),
+                        child: Text(
+                          "Karan Aujla",
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                              fontStyle: FontStyle.italic,
+                              fontWeight: FontWeight.bold,
+                              fontSize: h * 0.03,
+                              color: Colors.black),
+                        ),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    mainAxisSize: MainAxisSize.max,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Container(
+                        margin:
+                            EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+                        height: h * 0.05,
+                        width: w * 0.5,
                         decoration: BoxDecoration(
                             color: Color.fromARGB(255, 255, 98, 0),
                             borderRadius: BorderRadius.circular(15)),
@@ -151,11 +159,18 @@ class hmState extends State<hm>{
                               color: Colors.black),
                         ),
                       ),
+                    ],
+                  ),
+                  Row(
+                    mainAxisSize: MainAxisSize.max,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
                       Container(
                         margin:
                             EdgeInsets.symmetric(vertical: 10, horizontal: 20),
                         height: h * 0.05,
-                        width: w * 0.375,
+                        width: w * 0.5,
                         decoration: BoxDecoration(
                             color: Color.fromARGB(255, 255, 98, 0),
                             borderRadius: BorderRadius.circular(15)),
@@ -180,7 +195,7 @@ class hmState extends State<hm>{
                         margin:
                             EdgeInsets.symmetric(vertical: 10, horizontal: 20),
                         height: h * 0.05,
-                        width: w * 0.375,
+                        width: w * 0.5,
                         decoration: BoxDecoration(
                             color: Color.fromARGB(255, 255, 98, 0),
                             borderRadius: BorderRadius.circular(15)),
@@ -194,11 +209,18 @@ class hmState extends State<hm>{
                               color: Colors.black),
                         ),
                       ),
+                    ],
+                  ),
+                  Row(
+                    mainAxisSize: MainAxisSize.max,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
                       Container(
                         margin:
                             EdgeInsets.symmetric(vertical: 10, horizontal: 20),
                         height: h * 0.05,
-                        width: w * 0.38,
+                        width: w * 0.5,
                         decoration: BoxDecoration(
                             color: Color.fromARGB(255, 255, 98, 0),
                             borderRadius: BorderRadius.circular(15)),
@@ -206,7 +228,6 @@ class hmState extends State<hm>{
                           "Satinder Sartaj",
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                            
                             fontStyle: FontStyle.italic,
                             color: Colors.black,
                             fontSize: h * 0.03,
