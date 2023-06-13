@@ -206,6 +206,7 @@ class hmState extends State<hm>{
                           "Satinder Sartaj",
                           textAlign: TextAlign.center,
                           style: TextStyle(
+                            
                             fontStyle: FontStyle.italic,
                             color: Colors.black,
                             fontSize: h * 0.03,
