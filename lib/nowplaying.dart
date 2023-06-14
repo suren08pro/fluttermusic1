@@ -1,6 +1,5 @@
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
-
 import 'hm.dart';
 //import 'package:just_audio';
 
@@ -13,12 +12,29 @@ class nowplaying extends StatefulWidget {
 }
 class nowplayingState extends State<nowplaying>{
   int ac=0;
+  List<String> song = [
+    'song/LaagiLaganShankara.mp3',
+    'song/3_Peg.mp3',
+    'song/Carrom_Board.mp3',
+    'song/Hostel.mp3'
+  ];
   AudioPlayer pl=AudioPlayer();
   //String so='LaagiLaganShankara';
-  var s=AssetSource('song/LaagiLaganShankara.mp3');
+  
   Icon ic = Icon(Icons.play_arrow, size: 50);
+  
+  playSong(){
+    int n = 1;
+    var s = AssetSource(song[1]);
+    print(s);
+    return s;
+  }
   icc() {
+    
     if(ac==0){
+      print(playSong());
+      int n = 1;
+      var s = AssetSource(song[1]);
       pl.play(s);
       ic = Icon(Icons.pause, size: 50);
       ac=1;
@@ -28,12 +44,70 @@ class nowplayingState extends State<nowplaying>{
       ac=0;
     }
   }
+  bool isDrawer=false;
+  openDrawer(){
+    setState(() {
+      isDrawer=!isDrawer;
+    });
+  }
+  header(){
+    return Container(
+      height: MediaQuery.of(context).size.height*0.2,
+      width: MediaQuery.of(context).size.width,
+      color: Color.fromARGB(1, 238, 238, 226),
+      child: Text("Song List",style: TextStyle(fontStyle: FontStyle.italic,fontSize: MediaQuery.of(context).size.height*0.15,color: Colors.black),),
+    );
+  }
   @override
   Widget build(BuildContext context) {
     
     //  final assetsAudioPlayer=AssetsAudioPlayer();
     double h = MediaQuery.of(context).size.height;
     double w = MediaQuery.of(context).size.width;
+
+
+ /*   
+  bool _isDrawerOpen = false;
+
+  void _toggleDrawer() {
+    setState(() {
+      _isDrawerOpen = !_isDrawerOpen;
+    });
+  }
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Drawer Example'),
+      ),
+      /*body: Center(
+        child: ElevatedButton(
+          child: Text('Open Drawer'),
+          onPressed: _toggleDrawer,
+        ),
+      ),*/
+      drawer: Drawer(
+        child: ListView(
+          children: [
+            ListTile(
+              title: Text('Item 1'),
+              onTap: () {
+                // Handle item 1 tap
+              },
+            ),
+            ListTile(
+              title: Text('Item 2'),
+              onTap: () {
+                // Handle item 2 tap
+              },
+            ),
+          ],
+        ),
+      ),
+    );
+*/
+
+
+
+
     return Scaffold(
       appBar: AppBar(
         toolbarHeight: h * 0.1,
@@ -44,16 +118,42 @@ class nowplayingState extends State<nowplaying>{
           ),
           textAlign: TextAlign.center,
         ),
-        leading: TextButton(onPressed: (){Navigator.of(context).pop(MaterialPageRoute(builder: (context)=>hm()));},
-        child: Icon(Icons.arrow_back),),
-        actions: [
-          Icon(Icons.menu_rounded),
+        /*leading: TextButton(onPressed: (){Navigator.of(context).pop(MaterialPageRoute(builder: (context)=>hm()));},
+        child: Icon(Icons.arrow_back),),*/
+        /*actions: [ElevatedButton(onPressed:openDrawer,
+         child: Icon(Icons.menu_rounded),),
           SizedBox(
             width: 5,
           )
-        ],
+        ],*/
       ),
       backgroundColor: Colors.white,
+      /*drawer: Drawer(child: SingleChildScrollView(
+          child: Column(
+            children: [
+              header()
+            ],
+          ),
+        ),),*/
+      endDrawer: Drawer(
+        child: ListView(
+          children: [
+            ListTile(
+              title: Text('Song List'),
+              onTap: () {
+                // Handle item 1 tap
+              },
+            ),
+            ListTile(
+              title: Text('Singer List'),
+              onTap: () {
+                // Handle item 2 tap
+              },
+            ),
+          ],
+        ),
+      ),
+
       body: Column(children: [
         Container(
           height: h * 0.597,

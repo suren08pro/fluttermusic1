@@ -44,7 +44,7 @@ class hmState extends State<hm>{
                 Container(
                   margin: EdgeInsets.symmetric(vertical: 0, horizontal: 10),
                   height: h * 0.2,
-                  width: w * 0.5,
+                  width: h*0.2,
                   decoration: BoxDecoration(
                       color: Color.fromARGB(255, 7, 7, 7),
                       borderRadius: BorderRadius.circular(90)),
@@ -59,12 +59,12 @@ class hmState extends State<hm>{
                 ),
                 Container(
                     margin: EdgeInsets.symmetric(
-                      vertical: h * 0.013,
+                      vertical: h * 0.01,
                       horizontal: 0,
                     ),
-                    height: h * 0.026,
-                    width: w * 0.25,
-//                  color: Colors.black,
+                    padding: EdgeInsets.symmetric(horizontal: 0),
+                    height: h * 0.035,
+                    width: w * 0.15,
                     decoration: BoxDecoration(
                         color: Colors.black,
                         borderRadius: BorderRadius.circular(5)),
@@ -73,7 +73,7 @@ class hmState extends State<hm>{
                       child: Text(
                         "PLAY",
                         textAlign: TextAlign.center,
-                        style: TextStyle(color: Colors.amber),
+                        style: TextStyle(color: Colors.amber,fontSize: h*0.025),
                       ),
                     ))
               ],
@@ -83,7 +83,8 @@ class hmState extends State<hm>{
               height: h * 0.5,
               width: w,
               color: Color.fromARGB(255, 255, 213, 0),
-              child: Column(
+              child:SingleChildScrollView(
+                child: Column(
                 children: [
                   Row(
                     mainAxisSize: MainAxisSize.max,
@@ -97,7 +98,25 @@ class hmState extends State<hm>{
                         width: w * 0.5,
                         decoration: BoxDecoration(
                             color: Color.fromARGB(255, 255, 98, 0),
-                            borderRadius: BorderRadius.circular(15)),
+                            borderRadius: BorderRadius.circular(15),
+                            boxShadow: [
+                            BoxShadow(
+                              color: Color.fromARGB(255, 255, 98, 0),
+                              offset: const Offset(
+                                5.0,
+                                5.0,
+                              ),
+                              blurRadius: 10.0,
+                              spreadRadius: 2.0,
+                            ), //BoxShadow
+                            BoxShadow(
+                              color: Colors.white,
+                              offset: const Offset(0.0, 0.0),
+                              blurRadius: 0.0,
+                              spreadRadius: 0.0,
+                            ), //BoxShadow
+                          ],
+                        ),
                         child: Text(
                           "Sharry Maan",
                           textAlign: TextAlign.center,
@@ -123,7 +142,25 @@ class hmState extends State<hm>{
                         padding: EdgeInsets.symmetric(),
                         decoration: BoxDecoration(
                             color: Color.fromARGB(255, 255, 98, 0),
-                            borderRadius: BorderRadius.circular(15)),
+                            borderRadius: BorderRadius.circular(15),
+                            boxShadow: [
+                            BoxShadow(
+                              color: Color.fromARGB(255, 255, 98, 0),
+                              offset: const Offset(
+                                5.0,
+                                5.0,
+                              ),
+                              blurRadius: 10.0,
+                              spreadRadius: 2.0,
+                            ), //BoxShadow
+                            BoxShadow(
+                              color: Colors.white,
+                              offset: const Offset(0.0, 0.0),
+                              blurRadius: 0.0,
+                              spreadRadius: 0.0,
+                            ), //BoxShadow
+                          ],
+                        ),
                         child: Text(
                           "Karan Aujla",
                           textAlign: TextAlign.center,
@@ -148,7 +185,25 @@ class hmState extends State<hm>{
                         width: w * 0.5,
                         decoration: BoxDecoration(
                             color: Color.fromARGB(255, 255, 98, 0),
-                            borderRadius: BorderRadius.circular(15)),
+                            borderRadius: BorderRadius.circular(15),
+                            boxShadow: [
+                            BoxShadow(
+                              color: Color.fromARGB(255, 255, 98, 0),
+                              offset: const Offset(
+                                5.0,
+                                5.0,
+                              ),
+                              blurRadius: 10.0,
+                              spreadRadius: 2.0,
+                            ), //BoxShadow
+                            BoxShadow(
+                              color: Colors.white,
+                              offset: const Offset(0.0, 0.0),
+                              blurRadius: 0.0,
+                              spreadRadius: 0.0,
+                            ), //BoxShadow
+                          ],
+                        ),
                         child: Text(
                           "Ammy Virk",
                           textAlign: TextAlign.center,
@@ -173,7 +228,25 @@ class hmState extends State<hm>{
                         width: w * 0.5,
                         decoration: BoxDecoration(
                             color: Color.fromARGB(255, 255, 98, 0),
-                            borderRadius: BorderRadius.circular(15)),
+                            borderRadius: BorderRadius.circular(15),
+                            boxShadow: [
+                            BoxShadow(
+                              color: Color.fromARGB(255, 255, 98, 0),
+                              offset: const Offset(
+                                5.0,
+                                5.0,
+                              ),
+                              blurRadius: 10.0,
+                              spreadRadius: 2.0,
+                            ), //BoxShadow
+                            BoxShadow(
+                              color: Colors.white,
+                              offset: const Offset(0.0, 0.0),
+                              blurRadius: 0.0,
+                              spreadRadius: 0.0,
+                            ), //BoxShadow
+                          ],
+                        ),
                         child: Text(
                           "Jordan Sandhu",
                           textAlign: TextAlign.center,
@@ -198,7 +271,25 @@ class hmState extends State<hm>{
                         width: w * 0.5,
                         decoration: BoxDecoration(
                             color: Color.fromARGB(255, 255, 98, 0),
-                            borderRadius: BorderRadius.circular(15)),
+                            borderRadius: BorderRadius.circular(15),
+                            boxShadow: [
+                            BoxShadow(
+                              color: Color.fromARGB(255, 255, 98, 0),
+                              offset: const Offset(
+                                5.0,
+                                5.0,
+                              ),
+                              blurRadius: 10.0,
+                              spreadRadius: 2.0,
+                            ), //BoxShadow
+                            BoxShadow(
+                              color: Colors.white,
+                              offset: const Offset(0.0, 0.0),
+                              blurRadius: 0.0,
+                              spreadRadius: 0.0,
+                            ), //BoxShadow
+                          ],
+                        ),
                         child: Text(
                           "Navaan Sandhu",
                           textAlign: TextAlign.center,
@@ -223,7 +314,25 @@ class hmState extends State<hm>{
                         width: w * 0.5,
                         decoration: BoxDecoration(
                             color: Color.fromARGB(255, 255, 98, 0),
-                            borderRadius: BorderRadius.circular(15)),
+                            borderRadius: BorderRadius.circular(15),
+                            boxShadow: [
+                            BoxShadow(
+                              color: Color.fromARGB(255, 255, 98, 0),
+                              offset: const Offset(
+                                5.0,
+                                5.0,
+                              ),
+                              blurRadius: 10.0,
+                              spreadRadius: 2.0,
+                            ), //BoxShadow
+                            BoxShadow(
+                              color: Colors.white,
+                              offset: const Offset(0.0, 0.0),
+                              blurRadius: 0.0,
+                              spreadRadius: 0.0,
+                            ), //BoxShadow
+                          ],
+                        ),
                         child: Text(
                           "Satinder Sartaj",
                           textAlign: TextAlign.center,
@@ -238,7 +347,9 @@ class hmState extends State<hm>{
                     ],
                   ),
                 ],
-              ))
+              )
+              )
+              )
         ],
       ),
     );
