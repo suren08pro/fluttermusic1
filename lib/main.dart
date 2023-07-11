@@ -3,6 +3,7 @@ import 'dart:io';
 
 import 'package:appday1/hm.dart';
 import 'package:appday1/songs.dart';
+import 'package:appday1/src/song.dart';
 import 'package:appday1/try4.dart';
 import 'package:flutter/material.dart';
 import 'package:path_provider/path_provider.dart';
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget{
         brightness: Brightness.dark
       ),
         home:hm(),
-        //home:songss()
+        //home:sN()
         //home:HomePage(),
         //home:HomeScreen()
     );
